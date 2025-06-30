@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Corrija o Código</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 class="font cor">🎀Corrija o Código🎀</h1>
+  <h3 class="font cor">Fase <span id="fase-numero">1 - Fácil</span></h3>
+  <p class="font cor">
+    A Hello Kitty está com dificuldade para corrigir o código abaixo, vamos ajudá-la?
+    <br />
+    O Código deve somar dois números, mas está com um erro. Encontre e corrija o erro!
+  </p>
+
+  <div class="game-container">
+    <div class="code-editor">
+      <textarea
+        id="code"
+        spellcheck="false"
+        rows="6"
+        cols="40"
+      >function somar(a, b {
+  return a + b;
+}
+      </textarea>
+
+      <br />
+      <button onclick="verificarCodigo()">Verificar</button>
+      <button id="btnProximaFase" onclick="irParaProximaFase()" style="display: none;">
+        Próxima Fase
+      </button>
+    </div>
+    <div class="feedback">
+      <img id="Professora" src="hello kitty.png" alt="Personagem" />
+      <p id="mensagem"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
